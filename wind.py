@@ -281,7 +281,7 @@ def benefits_page():
     </div>
     """, unsafe_allow_html=True)
 
-    if st.button("Back to Home", use_container_width=True):
+    if st.button("Back to Home", width="content"):
         st.session_state.page = "home"
         st.rerun()
 
