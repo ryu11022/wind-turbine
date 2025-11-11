@@ -313,8 +313,8 @@ def types_page():
             <h3 style='font-size:24px; font-weight:bold;'>Onshore Wind Power</h3>
             <p>
             Onshore wind turbines are build on land and are the most common form of wind power generation.
-            They are relatively easy to construct and maintain, and the cost of installation is lower than offshore types.
-            However, wind turbines are making noise, so they can't be built in the city.
+            It is relatively easy to construct and maintain, and the cost of installation is lower than offshore types.
+            However, wind turbines are making noise, so it can't be built in the city.
             It is just able to build windy places such as mountain passes or open plains.
             </p>
         </div>
@@ -330,7 +330,7 @@ def types_page():
             <h3 style='font-size:24px; font-weight:bold;'>Offshore Wind Power</h3>
             <p>
             Offshore wind power involves wind turbines installed over the sea.
-            Since they are placed over the ocean where people are not present, the noise—a disadvantage of wind turbines—is less likely to affect people.
+            It is placed over the ocean where people are not present, the noise—a disadvantage of wind turbines—is less likely to affect people.
             So, people can do large-scale wind power generation.
             However, because construction requires ships at sea, costs are high, and durability capable of withstanding the marine environment is essential.
             </p>
@@ -351,9 +351,9 @@ def types_page():
         <div style='flex:1;'>
             <h3 style='font-size:24px; font-weight:bold;'>Horizontal-axis Turbines</h3>
             <p>
-            Horizontal-axis turbines are the most common type of wind power generation, resembling the propellers found in fans.
-            They consist of large blades connected to a generator and a tower supporting the structure.
-            The blades rotate around a horizontal axis. This design is highly efficient and widely used for power generation.
+            Horizontal-axis turbines are the most normal type of wind power generation, it looks like the propellers found in fans.
+            They made of large blades connected to a generator and a tower supporting the structure.
+            The blades rotate around a horizontal axis. This design is very efficient and widely used for power generation.
             Since this type can only capture wind from one direction, horizontal-axis turbines feature a mechanism to align the blade axis with the wind direction.
             </p>
         </div>
@@ -368,11 +368,12 @@ def types_page():
         <div style='flex:1;'>
             <h3 style='font-size:24px; font-weight:bold;'>Vertical-axis Turbines</h3>
             <p>
-            Vertical-axis turbines are wind generators with a vertical rotation axis, resembling a mixer in shape.
-            They consist of vertical blades connected to a generator and a support column holding the structure.
-            The blades rotate around the vertical axis. This design is smaller than horizontal-axis turbines, causing less harm to animals like birds and generating less noise.
-            Therefore, they are often installed in urban areas.
-            Additionally, this design can capture wind from various directions.
+            Vertical-axis turbines are wind generators with a vertical rotation axis, and it looks like a mixer.
+            It made by vertical blades connected to a generator and a support column holding the structure.
+            The blades rotate around the vertical axis.
+            This design is smaller than horizontal-axis turbines, causing less harm to animals like birds and generating less noise.
+            Therefore, they are often built in urban areas.
+            Also, this design can capture wind from various directions.
             However, their power generation capacity is lower than that of horizontal-axis turbines.
             </p>
         </div>
@@ -410,3 +411,4 @@ elif st.session_state.page == "benefits":
     benefits_page()
 elif st.session_state.page == "types":
     types_page()
+
