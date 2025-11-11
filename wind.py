@@ -236,7 +236,7 @@ def compare_page():
     <h2 style='font-size:28px; font-weight:bold;'>Summary</h2>
     <p>
     Wind power is an environmentally friendly form of renewable energy, but like other renewable energy sources, it relies on nature to generate energy and is therefore unstable.
-    It is important to make effective use of renewable energy sources by combining them and making sure that each one complements the other's shortcomings.
+    It is important to use renewable energy sources by combining them and making sure that each one complements the other's disadvantages.
     For example, wind power can be used as backup power at night when solar power cannot be used.
     </p>
     
@@ -258,10 +258,10 @@ def benefits_page():
     with col1:
         st.markdown("""
         <div style='font-size:22px; line-height:1.6; color:white;'>
-        A wind turbine consists of blades that catch the wind, a rotor that converts it into electricity, and a tower that supports the structure. 
+        A wind turbine made of blades that catch the wind, a rotor that changes it into electricity from kinetic energy, and a tower that supports the structure. 
         A wind turbine converts the kinetic energy of the wind into electrical energy. 
         When the wind blows, it pushes against the turbine blades, causing them to rotate. 
-        These blades are shaped like airplane wings and create a pressure difference that efficiently captures the wind.
+        These blades are shaped like airplane wings and create a pressure difference that captures the wind.
         This causes the blades to lift up, and rotate when the wind hits. 
         The rotating blades turn a rotor that is connected to a main shaft, which drives a generator.
         Inside the generator, this rotation is converted into electricity.
@@ -277,7 +277,7 @@ def benefits_page():
     <div style='font-size:22px; line-height:1.6; color:white;'>
     Wind turbines convert wind power into rotational energy, which is then converted into electricity.
     This allows for the production of clean, renewable energy with minimal environmental impact.
-    While individual units do not produce much electricity, they are inexpensive and can be installed in a variety of locations.
+    These individual units do not produce much electricity, they are inexpensive and can be placed a lot in many places.
     </div>
     """, unsafe_allow_html=True)
 
@@ -352,7 +352,7 @@ def types_page():
             <h3 style='font-size:24px; font-weight:bold;'>Horizontal-axis Turbines</h3>
             <p>
             Horizontal-axis turbines are the most normal type of wind power generation, it looks like the propellers found in fans.
-            They made of large blades connected to a generator and a tower supporting the structure.
+            They are made of large blades connected to a generator and a tower supporting the structure.
             The blades rotate around a horizontal axis. This design is very efficient and widely used for power generation.
             Since this type can only capture wind from one direction, horizontal-axis turbines feature a mechanism to align the blade axis with the wind direction.
             </p>
@@ -369,7 +369,7 @@ def types_page():
             <h3 style='font-size:24px; font-weight:bold;'>Vertical-axis Turbines</h3>
             <p>
             Vertical-axis turbines are wind generators with a vertical rotation axis, and it looks like a mixer.
-            It made by vertical blades connected to a generator and a support column holding the structure.
+            It is made by vertical blades connected to a generator and a support column holding the structure.
             The blades rotate around the vertical axis.
             This design is smaller than horizontal-axis turbines, causing less harm to animals like birds and generating less noise.
             Therefore, they are often built in urban areas.
@@ -411,4 +411,5 @@ elif st.session_state.page == "benefits":
     benefits_page()
 elif st.session_state.page == "types":
     types_page()
+
 
