@@ -76,7 +76,7 @@ def home():
             </p>
         </div>
         <div style='flex:1; text-align:center;'>
-            <img src='https://www.azom.com/images/Article_Images/ImageForArticle_21371_16457084545525256.jpg' 
+            <img src='https://tokyohatsuden.co.jp/_assets/images/service/wind/windowpower_animation.gif' 
                  width='500' style='border-radius:15px;'>
             <p style='font-size:18px; color:#ccc; margin-top:10px;'>Wind turbine overview</p>
         </div>
@@ -281,15 +281,22 @@ def benefits_page():
     with col2:
         st.image("canvastructure_bg.png", caption="Diagram of a modern wind turbine", use_container_width=True)
 
-    # 👇ここをカラムの外に移動
-    st.markdown("""
-    <h2 style='font-size:28px; font-weight:bold; color:white;'>Summary</h2>
-    <div style='font-size:22px; line-height:1.6; color:white;'>
-    Wind turbines convert wind power into rotational energy, which is then converted into electricity.
-    This allows for the production of clean, renewable energy with minimal environmental impact.
-    These individual units do not produce much electricity, they are inexpensive and can be placed a lot in many places.
-    </div>
-    """, unsafe_allow_html=True)
+    # 👇 Summary セクションを 2 カラムに変更
+    st.markdown("<h2 style='font-size:28px; font-weight:bold; color:white;'>Summary</h2>", unsafe_allow_html=True)
+    
+    sum_col1, sum_col2 = st.columns([2, 1])
+    
+    with sum_col1:
+        st.markdown("""
+        <div style='font-size:22px; line-height:1.6; color:white;'>
+        Wind turbines convert wind power into rotational energy, which is then converted into electricity.
+        This allows for the production of clean, renewable energy with minimal environmental impact.
+        These individual units do not produce much electricity, they are inexpensive and can be placed a lot in many places.
+        </div>
+        """, unsafe_allow_html=True)
+    
+    with sum_col2:
+        st.image("https://econavi.eic.or.jp/img/ecorepo/house/007/009_06.gif")
 
     if st.button("Back to Home", width="content"):
         st.session_state.page = "home"
@@ -425,6 +432,7 @@ elif st.session_state.page == "benefits":
     benefits_page()
 elif st.session_state.page == "types":
     types_page()
+
 
 
 
