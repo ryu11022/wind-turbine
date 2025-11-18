@@ -143,11 +143,21 @@ def home():
             st.session_state.page = "types"
             st.rerun()
 
-st.markdown("<br><br>", unsafe_allow_html=True)
-
-st.markdown("<h2 style='text-align:center; color:white;'>How do wind turbines work? - Rebecca J. Barthelmie and Sara C. Pryor</h2>", unsafe_allow_html=True)
-
-st.video("https://www.youtube.com/watch?v=xy9nj94xvKA")
+    st.markdown("<br><br>", unsafe_allow_html=True)
+        
+    st.markdown("<h2 style='text-align:center; color:white;'>How do wind turbines work? - Rebecca J. Barthelmie and Sara C. Pryor</h2>", unsafe_allow_html=True)
+        
+    st.markdown("""
+    <div style='text-align:center; margin-top:20px;'>
+        <iframe width="560" height="315"
+                src="https://www.youtube.com/watch?v=xy9nj94xvKA"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen>
+        </iframe>
+    </div>
+    """, unsafe_allow_html=True)
 
 # --- 他ページ ---
 def compare_page():
@@ -438,6 +448,7 @@ elif st.session_state.page == "benefits":
     benefits_page()
 elif st.session_state.page == "types":
     types_page()
+
 
 
 
