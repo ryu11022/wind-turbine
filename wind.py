@@ -141,7 +141,7 @@ def home():
 
 # --- 他ページ ---
 def compare_page():
-    set_background("canvasolar_bg.jpg")
+    set_background("canvanavy_bg.jpg")
 
     st.header("Compareson with Other Renewable Energy")
 
@@ -254,7 +254,7 @@ def compare_page():
         st.rerun()
 
 def benefits_page():
-    set_background("canvawind_bg.png")
+    set_background("canvanavy_bg.png")
 
     st.header("Wind Turbine Structure")
     st.markdown("<h2 style='font-size:28px; font-weight:bold; color:white;'>How Wind Turbines Work</h2>", unsafe_allow_html=True)
@@ -292,7 +292,7 @@ def benefits_page():
         st.rerun()
 
 def types_page():
-    set_background("canvasky_bg.jpg")
+    set_background("canvanavy_bg.jpg")
 
     st.header("Types of Wind Turbines")
     st.markdown("""
@@ -421,6 +421,7 @@ elif st.session_state.page == "benefits":
     benefits_page()
 elif st.session_state.page == "types":
     types_page()
+
 
 
 
