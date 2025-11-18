@@ -50,13 +50,17 @@ def home():
 
     st.markdown("<h1 style='text-align:center; font-size:70px; color:white;'>Wind Turbine</h1>", unsafe_allow_html=True)
 
-    # 目的（小さめ、右寄せ）
+    # 目的（小さめ、右寄せ・幅制限）
     st.markdown("""
-    <div style='text-align:right; font-size:20px; color:#dddddd; margin-top:-10px; margin-bottom:40px;'>
-        <p><em>This website explains the advantages and disadvantages of wind turbines, how they work, and compares them to other renewable energy sources, conveying the appeal of wind turbines.</em></p>
+    <div style='max-width:600px; margin-left:auto; text-align:right;
+                font-size:20px; color:#dddddd; margin-top:-10px; margin-bottom:40px;'>
+        <p><em>
+        This website explains the advantages and disadvantages of wind turbines, how they work, 
+        and compares them to other renewable energy sources, conveying the appeal of wind turbines.
+        </em></p>
     </div>
     """, unsafe_allow_html=True)
-    
+        
     # 追加部分：詳細説明
     st.markdown("""
     <div style='font-size:22px; line-height:1.6; color:white;'>
@@ -141,7 +145,7 @@ def home():
 
 # --- 他ページ ---
 def compare_page():
-    set_background("canvanavy_bg.jpg")
+    set_background("canvanavy_bg.png")
 
     st.header("Compareson with Other Renewable Energy")
 
@@ -292,7 +296,7 @@ def benefits_page():
         st.rerun()
 
 def types_page():
-    set_background("canvanavy_bg.jpg")
+    set_background("canvanavy_bg.png")
 
     st.header("Types of Wind Turbines")
     st.markdown("""
@@ -421,6 +425,7 @@ elif st.session_state.page == "benefits":
     benefits_page()
 elif st.session_state.page == "types":
     types_page()
+
 
 
 
