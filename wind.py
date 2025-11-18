@@ -76,7 +76,7 @@ def home():
             </p>
         </div>
         <div style='flex:1; text-align:center;'>
-            <img src='https://tokyohatsuden.co.jp/_assets/images/service/wind/windowpower_animation.gif' 
+            <img src='https://insideclimatenews.org/wp-content/uploads/2020/02/sunrisewindmill-1.gif' 
                  width='500' style='border-radius:15px;'>
             <p style='font-size:18px; color:#ccc; margin-top:10px;'>Wind turbine overview</p>
         </div>
@@ -142,6 +142,12 @@ def home():
         if st.button("Types of Wind Turbine", key="types", width="stretch"):
             st.session_state.page = "types"
             st.rerun()
+
+st.markdown("<br><br>", unsafe_allow_html=True)
+
+st.markdown("<h2 style='text-align:center; color:white;'>How do wind turbines work? - Rebecca J. Barthelmie and Sara C. Pryor</h2>", unsafe_allow_html=True)
+
+st.video("https://www.youtube.com/watch?v=xy9nj94xvKA")
 
 # --- 他ページ ---
 def compare_page():
@@ -432,6 +438,7 @@ elif st.session_state.page == "benefits":
     benefits_page()
 elif st.session_state.page == "types":
     types_page()
+
 
 
 
