@@ -49,7 +49,13 @@ def home():
     reset_scroll()
 
     st.markdown("<h1 style='text-align:center; font-size:70px; color:white;'>Wind Turbine</h1>", unsafe_allow_html=True)
-    
+
+    # 目的（小さめ、右寄せ）
+    st.markdown("""
+    <div style='text-align:right; font-size:20px; color:#dddddd; margin-top:-10px; margin-bottom:40px;'>
+        <p><em>This website explains the advantages and disadvantages of wind turbines, how they work, and compares them to other renewable energy sources, conveying the appeal of wind turbines.</em></p>
+    </div>
+    """, unsafe_allow_html=True)
     
     # 追加部分：詳細説明
     st.markdown("""
@@ -321,6 +327,7 @@ def types_page():
         <div style='flex:1; text-align:center;'>
             <img src='https://ourfuture.energy/wp-content/uploads/2019/03/wind-turbines.jpeg' 
                  width='500' style='border-radius:15px;'>
+            <p style='font-size:18px; color:#ccc; margin-top:10px;'>Example of onshore wind turbines</p>
         </div>
     </div>
 
@@ -338,6 +345,7 @@ def types_page():
         <div style='flex:1; text-align:center;'>
             <img src='https://www.energy.gov/sites/default/files/styles/full_article_width/public/Turbine_Comparison.jpg?itok=2tmJtLXQ' 
                  width='500' style='border-radius:15px;'>
+            <p style='font-size:18px; color:#ccc; margin-top:10px;'>Offshore wind power installation example</p>
         </div>
     </div>
 
@@ -360,6 +368,7 @@ def types_page():
         <div style='flex:1; text-align:center;'>
             <img src='https://www.windsystemsmag.com/wp-content/uploads/2019/10/1019-CW-I1.jpg' 
                  width='500' style='border-radius:15px;'>
+            <p style='font-size:18px; color:#ccc; margin-top:10px;'>Structure of a horizontal-axis turbine</p>
         </div>
     </div>
 
@@ -380,6 +389,7 @@ def types_page():
         <div style='flex:1; text-align:center;'>
             <img src='https://www.anthropocenemagazine.org/wp-content/uploads/2017/03/vawt.jpg' 
                  width='500' style='border-radius:15px;'>
+            <p style='font-size:18px; color:#ccc; margin-top:10px;'>Example of a vertical-axis turbine</p>
         </div>
     </div>
 
@@ -411,5 +421,6 @@ elif st.session_state.page == "benefits":
     benefits_page()
 elif st.session_state.page == "types":
     types_page()
+
 
 
